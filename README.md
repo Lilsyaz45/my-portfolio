@@ -3,17 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My portfolio</title>
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 </head>
 <body>
 
     <header class="header">
-       
-        <a href="#home" class="logo">Noreak 
-            <span>Sattya</span></a>
-       
+        <a href="#home" class="logo">Noreak <span>Sattya</span></a>
         <i class='bx bx-menu' id="menu-icon"></i>
 
         <nav class="navbar">
@@ -24,57 +21,49 @@
         </nav>
     </header>
 
-    <secction class="home" id="home">
+    <section class="home" id="home">
         <div class="home-img">
-            <img src="image.jpg" alt="img">
+            <img src="image.jpg" alt="Profile image">
         </div>
         <div class="home-content">
             <h1>It's<span> Sattya</span></h1>
-            <h3 class="text-animation">
-                I'm a <span></span>
-            </h3>
-
-            <p>Your trust partner for digital growth. Built your vision into a stunning website.</p>
+            <h3 class="text-animation">I'm a <span></span></h3>
+            <p>Your trusted partner for digital growth. Build your vision into a stunning website.</p>
 
             <div class="social-icons">
                 <a href="#"><i class='bx bxl-linkedin-square'></i></a>
-                <a href="https://www.instagram.com/lilsyaz_?igsh=MTB0OWg0ZXM5a2J2bg%3D%3D&utm_source=qr" target="_blank"><i class='bx bxl-instagram-alt' ></i></a>
-                <a href="https://www.facebook.com/share/1Eyu9L8FEY/?mibextid=wwXIfr" target="_blank"><i class='bx bxl-facebook-circle' ></i></a>
-                <a href="https://t.me/Sot_noreaksattya" target="_blank"><i class='bx bxl-telegram' ></i></a>
+                <a href="https://www.instagram.com/lilsyaz_?igsh=MTB0OWg0ZXM5a2J2bg%3D%3D&utm_source=qr" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="https://www.facebook.com/share/1Eyu9L8FEY/?mibextid=wwXIfr" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
+                <a href="https://t.me/Sot_noreaksattya" target="_blank"><i class='bx bxl-telegram'></i></a>
             </div>
 
             <a href="#" class="btn">Hire Me</a>
-
         </div>
-    </secction>
+    </section>
 
     <section class="about" id="about">
         <div class="about-content">
             <h2 class="heading">About <span>Me</span></h2>
-            <h3 class="text-animation">
-                <span></span>
-            </h3>
-            <p>Curently I am year 2 student at Cambodia Academy Of Digital Technology. Specialize in Software Engineer. </p>
+            <h3 class="text-animation"><span></span></h3>
+            <p>Currently I am a year 2 student at Cambodia Academy Of Digital Technology, specializing in Software Engineering.</p>
             <br>
             <a href="#" class="btn">Read More</a>
         </div>
         <div class="about-img">
-            <img src="image.jpg" alt="img">
+            <img src="image.jpg" alt="About image">
         </div>
     </section>
 
     <section class="services" id="services">
         <h2 class="heading">Services</h2>
-
         <div class="services-container">
-
             <div class="service-box">
                 <div class="service-info">
                     <h4>Graphic Designer</h4>
                     <p>Creating visually appealing designs for various media.</p>
                 </div>
             </div>
-        
+
             <div class="service-box">
                 <div class="service-info">
                     <h4>Web Development</h4>
@@ -88,85 +77,47 @@
                     <p>Designing user interfaces and experiences for digital products.</p>
                 </div>
             </div>
-            
         </div>
     </section>
 
-<section class="contact" id="contact">
-    <h2 class="heading">Contact <span>Me</span></h2>
-
-    <form action="https://formspree.io/f/mqayrrqq" method="POST">
-        <div class="input-box">
-            <input type="text" name="name" placeholder="Full Name" required>
-            <input type="email" name="email" placeholder="Email Address" required>
-        </div>
-
-        <div class="input-box">
-            <input type="number" name="phone" placeholder="Phone Number" required>
-            <input type="text" name="subject" placeholder="Subject" required>
-        </div>
-
-        <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
-        <input type="submit" value="Send Message" class="btn">
-    </form>
-</section>
-
-<script>
-const form = document.querySelector("form");
-
-form.addEventListener("submit", async (e) => {
-  e.preventDefault();
-  const formData = new FormData(form);
-  const response = await fetch(form.action, {
-    method: "POST",
-    body: formData,
-    headers: { 'Accept': 'application/json' }
-  });
-  if (response.ok) {
-    alert("✅ Message sent successfully! Thank you for contacting me.");
-    form.reset();
-  } else {
-    alert("❌ Something went wrong. Please try again later.");
-  }
-});
-</script>
-
-
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+        <form action="https://formspree.io/f/mqayrrqq" method="POST">
+            <div class="input-box">
+                <input type="text" name="name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+            </div>
+            <div class="input-box">
+                <input type="number" name="phone" placeholder="Phone Number" required>
+                <input type="text" name="subject" placeholder="Subject" required>
+            </div>
+            <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
 
     <footer class="footer">
         <div class="social">
             <a href="#"><i class='bx bxl-linkedin-square'></i></a>
-            <a href="https://www.instagram.com/lilsyaz_?igsh=MTB0OWg0ZXM5a2J2bg%3D%3D&utm_source=qr"><i class='bx bxl-instagram-alt' ></i></a>
-            <a href="https://www.facebook.com/share/1Eyu9L8FEY/?mibextid=wwXIfr" target="_blank"><i class='bx bxl-facebook-circle' ></i></a>
-            <a href="https://t.me/Sot_noreaksattya"><i class='bx bxl-telegram' ></i></a>
+            <a href="https://www.instagram.com/lilsyaz_?igsh=MTB0OWg0ZXM5a2J2bg%3D%3D&utm_source=qr"><i class='bx bxl-instagram-alt'></i></a>
+            <a href="https://www.facebook.com/share/1Eyu9L8FEY/?mibextid=wwXIfr" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
+            <a href="https://t.me/Sot_noreaksattya"><i class='bx bxl-telegram'></i></a>
         </div>
 
         <ul class="list">
-            <li>
-                <a href="#">FAQ</a>
-            </li>
-            <li>
-                <a href="#services">Services</a>
-            </li>
-            <li>
-                <a href="#about">About me</a>
-            </li>
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
-            <li>
-                <a href="#">Privacy Policy</a>
-            </li>
-
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About me</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#">Privacy Policy</a></li>
         </ul>
+
         <p class="copyright">
             &copy; 2025 Noreak Sattya. All rights reserved.
         </p>
     </footer>
 
-
-
-     <script src="script.js"></script>   
+    <script src="script.js"></script>
 </body>
 </html>
 
@@ -716,30 +667,53 @@ span{
 
 
 
+
+
+// Navbar scroll and menu toggle
 let menuicon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 let sections = document.querySelectorAll('section');
 let navlinks = document.querySelectorAll('header nav a');
 
 window.onscroll = () => {
-    sections.forEach(sec => {
-        let top = window.scrollY;
-        let offset = sec.offsetTop - 150;
-        let height = sec.offsetHeight;
-        let id = sec.getAttribute('id');
+  sections.forEach(sec => {
+    let top = window.scrollY;
+    let offset = sec.offsetTop - 150;
+    let height = sec.offsetHeight;
+    let id = sec.getAttribute('id');
 
-        if (top >= offset && top < offset + height) {
-            navlinks.forEach(links => {
-                links.classList.remove('active');
-                document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
-            });
-        };
-    });
-}
+    if (top >= offset && top < offset + height) {
+      navlinks.forEach(links => {
+        links.classList.remove('active');
+        document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
+      });
+    }
+  });
+};
+
 menuicon.onclick = () => {
-    menuicon.classList.toggle('bx-x');
-    navbar.classList.toggle('active');
-}
+  menuicon.classList.toggle('bx-x');
+  navbar.classList.toggle('active');
+};
 
+// Contact form submission
+const form = document.querySelector("form");
 
-![image](https://github.com/user-attachments/assets/16c49291-2c49-4d9b-8e70-b3aa4c603a37)
+form.addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const formData = new FormData(form);
+  const response = await fetch(form.action, {
+    method: "POST",
+    body: formData,
+    headers: { 'Accept': 'application/json' }
+  });
+  if (response.ok) {
+    alert("✅ Message sent successfully! Thank you for contacting me.");
+    form.reset();
+  } else {
+    alert("❌ Something went wrong. Please try again later.");
+  }
+});
+
+![image](https://github.com/user-attachments/assets/4346afb3-2369-4459-b177-cae4b1c837fe)
+
