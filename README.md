@@ -1,4 +1,3 @@
-# my-portfolio
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -39,9 +38,9 @@
 
             <div class="social-icons">
                 <a href="#"><i class='bx bxl-linkedin-square'></i></a>
-                <a href="#"><i class='bx bxl-instagram-alt' ></i></a>
+                <a href="https://www.instagram.com/lilsyaz_?igsh=MTB0OWg0ZXM5a2J2bg%3D%3D&utm_source=qr" target="_blank"><i class='bx bxl-instagram-alt' ></i></a>
                 <a href="https://www.facebook.com/share/1Eyu9L8FEY/?mibextid=wwXIfr" target="_blank"><i class='bx bxl-facebook-circle' ></i></a>
-                <a href="#"><i class='bx bxl-telegram' ></i></a>
+                <a href="https://t.me/Sot_noreaksattya" target="_blank"><i class='bx bxl-telegram' ></i></a>
             </div>
 
             <a href="#" class="btn">Hire Me</a>
@@ -137,9 +136,9 @@ form.addEventListener("submit", async (e) => {
     <footer class="footer">
         <div class="social">
             <a href="#"><i class='bx bxl-linkedin-square'></i></a>
-            <a href="#"><i class='bx bxl-instagram-alt' ></i></a>
+            <a href="https://www.instagram.com/lilsyaz_?igsh=MTB0OWg0ZXM5a2J2bg%3D%3D&utm_source=qr"><i class='bx bxl-instagram-alt' ></i></a>
             <a href="https://www.facebook.com/share/1Eyu9L8FEY/?mibextid=wwXIfr" target="_blank"><i class='bx bxl-facebook-circle' ></i></a>
-            <a href="#"><i class='bx bxl-telegram' ></i></a>
+            <a href="https://t.me/Sot_noreaksattya"><i class='bx bxl-telegram' ></i></a>
         </div>
 
         <ul class="list">
@@ -147,13 +146,13 @@ form.addEventListener("submit", async (e) => {
                 <a href="#">FAQ</a>
             </li>
             <li>
-                <a href="#">Services</a>
+                <a href="#services">Services</a>
             </li>
             <li>
-                <a href="#">About me</a>
+                <a href="#about">About me</a>
             </li>
             <li>
-                <a href="#">Contact</a>
+                <a href="#contact">Contact</a>
             </li>
             <li>
                 <a href="#">Privacy Policy</a>
@@ -169,7 +168,9 @@ form.addEventListener("submit", async (e) => {
 
      <script src="script.js"></script>   
 </body>
-</html>*{
+</html>
+
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -715,8 +716,6 @@ span{
 
 
 
-
-
 let menuicon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 let sections = document.querySelectorAll('section');
@@ -740,5 +739,7 @@ window.onscroll = () => {
 menuicon.onclick = () => {
     menuicon.classList.toggle('bx-x');
     navbar.classList.toggle('active');
-}![image](https://github.com/user-attachments/assets/c3ce3c7a-3b91-4b44-b0e8-19ba33eb1023)
+}
 
+
+![image](https://github.com/user-attachments/assets/16c49291-2c49-4d9b-8e70-b3aa4c603a37)
