@@ -73,6 +73,7 @@ section{
     align-items: center;
     flex-direction: column;
     gap: 1rem;
+    margin-top: 8rem;
 }
 .home-content{
     display: flex;
